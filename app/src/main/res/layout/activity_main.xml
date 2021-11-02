@@ -8,10 +8,35 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/etText"
+    <TextView
+        android:id="@+id/tvDisplay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etVal1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etVal2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etResult"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +55,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkOperator"
             android:text="@string/btnMod"/>
 
     </LinearLayout>
@@ -46,28 +71,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkNumber"
             android:text="@string/btnNo7"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkNumber"
             android:text="@string/btnNo8"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkNumber"
             android:text="@string/btnNo9"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkOperator"
             android:text="@string/btnMulti"/>
     </LinearLayout>
 
@@ -81,28 +106,28 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkNumber"
             android:text="@string/btnNo4"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkNumber"
             android:text="@string/btnNo5"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkNumber"
             android:text="@string/btnNo6"/>
 
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkOperator"
             android:text="@string/btnMinus"/>
     </LinearLayout>
 
@@ -128,19 +153,19 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="clkBtn"
+                    android:onClick="clkNumber"
                     android:text="@string/btnNo1"/>
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="clkBtn"
+                    android:onClick="clkNumber"
                     android:text="@string/btnNo2"/>
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="clkBtn"
+                    android:onClick="clkNumber"
                     android:text="@string/btnNo3"/>
             </LinearLayout>
 
@@ -153,13 +178,13 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:onClick="clkBtn"
+                    android:onClick="clkNumber"
                     android:text="@string/btnNo0"/>
                 <Button
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:onClick="clkBtn"
+                    android:onClick="clkEqual"
                     android:text="@string/btnEqual"/>
             </LinearLayout>
         </LinearLayout>
@@ -168,7 +193,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:onClick="clkBtn"
+            android:onClick="clkOperator"
             android:text="@string/btnPlus" />
     </LinearLayout>
 </LinearLayout>
